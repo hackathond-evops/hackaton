@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  exchange-hack:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-16T22:18:14.0937846+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 624d4f2bcb4d1dd317adfc48e501f062c12b531a230866d2fc8f69f08ecf23ab
+    name: exchange-hack
+    type: application
+    urls:
+    - exchange-hack-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-02-16T22:18:14.0932324+02:00"
