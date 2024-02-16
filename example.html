@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="bg-gradient-to-r from-blue-900 to-blue-800 text-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-transparent text-white px-5 py-3 flex justify-between items-center">
+        <div class="flex space-x-4">
+            <a href="#" class="text-white font-semibold text-lg">Personal</a>
+            <a href="#" class="text-white font-semibold text-lg">Business</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="text-white font-semibold text-lg">Send Money</a>
+            <a href="#" class="text-white font-semibold text-lg">Converter</a>
+            <a href="#" class="text-white font-semibold text-lg">Currency API</a>
+            <a href="#" class="text-white font-semibold text-lg">Tools</a>
+            <a href="#" class="text-white font-semibold text-lg">Resources</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="text-white font-semibold text-lg">Sign In</a>
+            <a href="#" class="bg-blue-500 text-white font-semibold text-lg py-2 px-4 rounded">Register</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="text-center px-4 py-10">
+        <h1 class="text-3xl font-bold">Trusted Global Currency Converter & Money Transfers</h1>
+        <p class="text-lg mt-2">Best source for currency conversion, sending money online and tracking exchange rates</p>
+    </div>
+
+    <!-- Currency Converter Widget -->
+    <div class="max-w-2xl mx-auto bg-white rounded-lg p-8 text-gray-800">
+        <div class="flex space-x-4 mb-4">
+            <button class="flex-1 text-blue-800 bg-blue-200 rounded-lg p-2 font-semibold">Convert</button>
+            <button class="flex-1 text-blue-800 rounded-lg p-2 font-semibold">Send</button>
+            <button class="flex-1 text-blue-800 rounded-lg p-2 font-semibold">Charts</button>
+            <button class="flex-1 text-blue-800 rounded-lg p-2 font-semibold">Alerts</button>
+        </div>
+        <div class="flex gap-4 mb-4">
+            <div class="w-1/2">
+                <label for="amount" class="block text-sm font-medium text-gray-700">Amount</label>
+                <input type="text" id="amount" name="amount" value="$1.00" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+            </div>
+            <div class="w-1/2 flex justify-between">
+                <div class="w-full">
+                    <label for="from-currency" class="block text-sm font-medium text-gray-700">From</label>
+                    <select id="from-currency" name="from-currency" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        <option>USD – US Dollar</option>
+                    </select>
+                </div>
+                <span class="mt-5 mx-2 text-gray-700"><i class="fas fa-exchange-alt"></i></span>
+                <div class="w-full">
+                    <label for="to-currency" class="block text-sm font-medium text-gray-700">To</label>
+                    <select id="to-currency" name="to-currency" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        <option>EUR – Euro</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Convert</button>
+        </div>
+        <p class="text-sm text-gray-500 mt-4">We use the mid-market rate for our Converter. This is for informational purposes only. You won’t receive this rate when sending money. <a href="#" class="text-blue-600 hover:underline">Login to view send rates</a></p>
+    </div>
+</body>
+
+</html>
